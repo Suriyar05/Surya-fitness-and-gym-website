@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>responsive flip image</title>
+    <style type="text/css">
+    body {
+        background: linear-gradient(to left,skyblue ,skyblue);
+    }
+ 
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        width: 100%;
+        margin: 40px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .front img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .container1 {
+        position: relative;
+    }
+
+    .front h2 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        color: white;
+        padding: 15px;
+        transform: perspective(500px) rotateY(180deg);
+        transition: transform .5s linear 0s;
+        backface-visibility: hidden;
+        border-radius: 10px
+    }
+
+    .front {
+        height: 100%;
+        width: 100%;
+        color: white;
+        transform: perspective(500px) rotateY(0deg);
+        transition: transform .5s linear 0s;
+
+
+    }
+
+    .container1:hover>.front {
+        transform: perspective(600px) rotateY(-180deg);
+        cursor: pointer;
+    }
+
+    .container1:hover>.back {
+        transform: perspective(600px) rotateY(0deg);
+        cursor: pointer;
+    }
+    </style>
+</head>
+<h1 font-size="roboto"><center>GYM EQUIPMENTS</center></h1>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/tred%20well.jpg"
+                width="500px" height="500px">
+            </div>
+            <div class="back">
+                <h2>TREADWHEEL</h2>
+                <p>A treadwheel, or treadmill, is a form of engine typically powered by humans. It may resemble a water wheel in appearance, and can
+                     be worked either by a human treading paddles set into its circumference (treadmill), or by a human or animal standing inside it (treadwheel).</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/drumbells.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>DRUMBELL</h2>
+                <p>A dumbbell is a short bar with weights on either side which people use for physical exercise to strengthen their arm and shoulder muscles.
+                </p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/cycling.jpg">
+            </div>
+            <div class="back">
+                <h2>CYCLING</h2>
+                <p>Regular cycling stimulates and improves your heart, lungs and circulation, reducing your risk of cardiovascular diseases. Cycling strengthens your heart muscles, lowers resting pulse and reduces blood fat levels.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/elliptical%20machine.jpg">
+            </div>
+            <div class="back">
+                <h2>ELLIPTICAL MACHINE</h2>
+                <p>An elliptical machine provides a low impact cardio workout. It can benefit your overall fitness, including increasing your stamina and strengthening your upper and lower body.Benefits of an elliptical machine is boost your stamina and cardio capacity and also burns a lot of calories  </p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/leg%20press%20machine.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>LEG PRESS MACHINE</h2>
+                <p>The term leg press machine refers to the apparatus used to perform this exercise. The leg press can be used to evaluate an athlete's overall lower body strength (from the gluteus Maximus to the lower leg muscles). It can help to build squat strength.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/leg%20extension.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>LEG EXTENSION</h2>
+                <p>These machines allow you to perform both leg extensions and curls, so you can ensure you target a massive range of leg muscles. Switching between the two exercises is simple, and can be done by rotating the weight bar to the suitable position, using the large disc to select your ideal starting position.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/rowing%20machine.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>ROWING MACHINE</h2>
+                <p> An exercise machine having a mechanism with two oarlike handles, foot braces, and a sliding seat, allowing the user to go through the motions of rowing in a racing shell.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/pull%20up%20bar.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>PULL-UP BAR</h2>
+                <p>A pullup bar is a piece of exercise equipment made of metal, with rubber or foam grips. You can attach the bar to a wall, ceiling, or doorframe. Portable versions can be easily stored or transported. Exercise towers give you more workout options but are harder to move.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/chest%20fly%20machine.jpg">
+            </div>
+            <div class="back">
+                <h2>MACHINE  SHOULDER MILITARY PRESS</h2>
+                <p>Sit down on the Shoulder Press Machine and select the weight. Grab the handles to your sides as you keep the elbows bent and in line with your torso. This will be your starting position. Now lift the handles as you exhale and you extend the arms fully.</p>
+            </div>
+        </div>
+        
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/chest%20fly%20machine1.jpg">
+            
+            </div>
+            <div class="back">
+                <h2>CHEST FLY MACHINE</h2>
+                <p>With chest fly machines the flys are done with straight elbows and a non externally-rotated humerus, providing a big stretch and greater range of motion at the open position than with the pec deck where your elbows are not straight. This can lead to enhanced muscle growth.</p>
+            </div>
+        </div>
+        
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/triceps%20press%20machine.jpg">
+            </div>
+            <div class="back">
+                <h2>TRICEPS PRESS MACHINE</h2>
+                <p>The machine shoulder press primarily activates the deltoid muscles of the shoulder. As secondary and mover muscles, this exercise engages the pecs, triceps, and middle back muscles. The shoulder press machine is an excellent exercise for building bulky shoulders.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="front">
+                <img src="file:///C:/Users/ranga/OneDrive/Documents/Create%20Responsive%20GYM%20Website%20Template/img/leg%20raise%20tower.png">
+            
+            </div>
+            <div class="back">
+                <h2>LEG RAISE TOWER</h2>
+                <p>The Leg Raise Tower is an excellent equipment if you want to build abs of steel. It has a chair-like frame and can help you work your core muscles and hips as well. If you have access to this equipment at the gym or fitness centre, you must use it. The Leg Raise Tower can be used as a dip tower as well.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html
